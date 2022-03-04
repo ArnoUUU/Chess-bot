@@ -8,6 +8,7 @@ authors = ["ArnoUUU <<>>"]
 python = "^3.8"
 keras = "^2.8.0"
 Keras-Preprocessing = "^1.1.2"
+tensorflow = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 
