@@ -24,7 +24,7 @@ p.init()
 Initialize a dictionary of the images. THis will be stored in your RAM, and will be optimized to minimize the operations necessary
 '''
 def Load_Images():
-  pieces=['BR','BN','BB','BQ','BK','BP','WR','WN','WB','WQ','WK','WP']
+  pieces=['BB','BK','BN','BP','BQ','BR','WB','WK','WN','WP','WQ','WR']
   for piece in pieces:
     Images[piece] = p.transform.scale(p.image.load("images/"+piece+".png")), (Square_size, Square_size)
 #Now we can access images with "Images['BB']" for example
