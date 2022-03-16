@@ -31,10 +31,3 @@ def Load_Images():
 # https://python-chess.readthedocs.io/en/latest/pgn.html#writing
 
 # https://levelup.gitconnected.com/chess-python-ca4532c7f5a4
-
-def eval():
-  
-
-
-
-
