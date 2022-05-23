@@ -20,15 +20,31 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 
 # You can also write temporary files to /kaggle/temp/, but they won't be saved outside of the current session
 
+
+
+# NEW NOTEBOOK BOX
+
+
+
+
 df = pd.read_csv('../input/chess-evaluations/chessData.csv')
 training_set = df.loc[0:999999]
 test_set = df.loc[1000000: 1999999]
 training_set.head()
 #training_set['FEN'].apply(function_name(args))
 
+
+# NEW NOTEBOOK BOX
+
+
+
 def con_pos_to_num(r, c):
     val = r * 8 + c
     return val
+
+# NEW NOTEBOOK BOX
+
+
 
 def bitboards_to_array(bb: np.ndarray) -> np.ndarray:
     bb = np.asarray(bb, dtype=np.uint64)[:, np.newaxis]
@@ -36,6 +52,13 @@ def bitboards_to_array(bb: np.ndarray) -> np.ndarray:
     b = (bb >> s).astype(np.uint8)
     b = np.unpackbits(b, bitorder="little")
     return b.reshape(-1, 8, 8)
+
+
+
+# NEW NOTEBOOK BOX
+
+
+
 
 def network_input(s):
     bd = chess.Board(s)
@@ -80,6 +103,9 @@ def network_input(s):
 #     print(chess.square(G8))
     print(bd)
     return bd, bd
+
+# NEW NOTEBOOK BOX
+
 
 pieces = np.array([
         black & bd.pawns,
