@@ -1,5 +1,5 @@
 '''
-This module is responsible foe storing all of the Gamedata. This will  be responsible for generating all legal moves. This will also keep a move log. Which (optional) may be eportabel as PGN
+This module is responsible for storing all of the Gamedata. This will be responsible for generating all legal moves. This will also keep a move log. Which (optional) may be eportabel as PGN
 '''
 class Gamedata():
   def _init_(self):

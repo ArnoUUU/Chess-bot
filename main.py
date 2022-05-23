@@ -18,7 +18,7 @@ Square_size=Height//Dimension
 Max_Fps=10
 Images={}
 # initializing pygame
-p.init()
+pg.init()
 
 '''
 Initialize a dictionary of the images. THis will be stored in your RAM, and will be optimized to minimize the operations necessary
@@ -26,7 +26,7 @@ Initialize a dictionary of the images. THis will be stored in your RAM, and will
 def Load_Images():
   pieces=['BB','BK','BN','BP','BQ','BR','WB','WK','WN','WP','WQ','WR']
   for piece in pieces:
-    Images[piece] = p.transform.scale(p.image.load("images/"+piece+".png")), (Square_size, Square_size)
+    Images[piece] = pg.transform.scale(pg.image.load("images/"+piece+".png")), (Square_size, Square_size)
 #Now we can access images with "Images['BB']" for example
 # https://python-chess.readthedocs.io/en/latest/pgn.html#writing
 
